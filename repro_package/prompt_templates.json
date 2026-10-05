@@ -1,0 +1,26 @@
+{
+  "original": {
+    "ind": [
+      "a photo of {}, an Indian dish",
+      "a close-up photo of {} served on a plate",
+      "a restaurant photo of Indian food: {}"
+    ],
+    "wes": [
+      "a photo of {}, a food dish",
+      "a restaurant photo of {}",
+      "a close-up photo of {}"
+    ]
+  },
+  "neutral": {
+    "ind": [
+      "a photo of {}, a type of food.",
+      "a close-up photo of {}.",
+      "a photo of a plate of {}."
+    ],
+    "wes": [
+      "a photo of {}, a type of food.",
+      "a close-up photo of {}.",
+      "a photo of a plate of {}."
+    ]
+  }
+}

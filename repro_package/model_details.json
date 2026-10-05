@@ -1,0 +1,37 @@
+{
+  "timm_name": "vit_base_patch14_dinov2",
+  "hf_hub_id": "timm/vit_base_patch14_dinov2.lvd142m",
+  "native_input_size": "(3, 518, 518)",
+  "used_input_size": "224x224 (position embeddings interpolated by timm)",
+  "patch_grid_at_224": "(16, 16)",
+  "embed_dim": 768,
+  "depth": 12,
+  "head": "Linear(in_features=768, out_features=100, bias=True)",
+  "head_init": "timm default initialisation of a new nn.Linear(768, 100), on the CLS token (global_pool=token)",
+  "global_pool": "token",
+  "lora": {
+    "r": 8,
+    "alpha": 16,
+    "dropout": 0.1,
+    "target_modules": "qkv (fused query/key/value projection) in all blocks",
+    "n_adapted_modules": 12,
+    "adapted_modules": [
+      "base_model.model.blocks.0.attn.qkv",
+      "base_model.model.blocks.1.attn.qkv",
+      "base_model.model.blocks.10.attn.qkv",
+      "base_model.model.blocks.11.attn.qkv",
+      "base_model.model.blocks.2.attn.qkv",
+      "base_model.model.blocks.3.attn.qkv",
+      "base_model.model.blocks.4.attn.qkv",
+      "base_model.model.blocks.5.attn.qkv",
+      "base_model.model.blocks.6.attn.qkv",
+      "base_model.model.blocks.7.attn.qkv",
+      "base_model.model.blocks.8.attn.qkv",
+      "base_model.model.blocks.9.attn.qkv"
+    ],
+    "lora_params": 294912,
+    "head_params": 76900,
+    "trainable_total": 371812,
+    "trainable_pct_of_wrapped_model": 0.431
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "images_collected": 4578,
+  "exact_duplicate_groups": 84,
+  "removed_extra_copies_same_class": 73,
+  "removed_cross_class_duplicates": 22,
+  "images_used": 4483,
+  "near_duplicate_groups_kept_together": 210,
+  "images_in_near_duplicate_groups": 497,
+  "largest_group": 17,
+  "near_duplicate_groups_spanning_classes": 3,
+  "thresholds": {
+    "phash_hamming_max": 6,
+    "dinov2_cosine_min": 0.95
+  },
+  "per_class_used_min": 7
+}

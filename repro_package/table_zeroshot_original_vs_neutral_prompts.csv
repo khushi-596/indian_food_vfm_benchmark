@@ -1,0 +1,9 @@
+Model,Templates,Indian,Food-101 matched,Gap (pp),Gap CI image-level,Gap CI class-stratified
+CLIP ViT-B/32,original,39.38,82.3,42.92,"[38.2, 47.6]","[39.2, 46.5]"
+CLIP ViT-B/32,neutral,39.09,81.56,42.48,"[37.8, 47.1]","[38.9, 46.0]"
+CLIP ViT-L/14,original,44.84,90.41,45.58,"[41.2, 49.9]","[42.5, 48.5]"
+CLIP ViT-L/14,neutral,44.69,90.27,45.58,"[41.3, 49.9]","[42.5, 48.7]"
+SigLIP SO400M/14,original,74.63,95.87,21.24,"[17.7, 24.8]","[18.6, 23.7]"
+SigLIP SO400M/14,neutral,74.93,95.72,20.8,"[17.1, 24.3]","[18.1, 23.3]"
+SigLIP2 ViT-B/16,original,70.65,94.1,23.45,"[19.6, 27.4]","[20.5, 26.4]"
+SigLIP2 ViT-B/16,neutral,68.88,93.95,25.07,"[21.1, 29.1]","[22.0, 28.0]"

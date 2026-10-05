@@ -1,0 +1,7 @@
+pHash Hamming <=,test imgs w/ match in train,test imgs w/ match in val,val imgs w/ match in train
+0,0,0,0
+2,0,0,0
+4,0,0,0
+6,0,0,0
+8,4,3,2
+10,15,8,13

@@ -1,0 +1,110 @@
+{
+  "CLIP ViT-B/32": {
+    "arch": "ViT-B-32",
+    "pretrained": "laion2b_s34b_b79k",
+    "in_submitted_manuscript": true,
+    "preprocess": "Compose(\n    Resize(size=224, interpolation=bicubic, max_size=None, antialias=True)\n    CenterCrop(size=(224, 224))\n    MaybeConvertMode()\n    MaybeToTensor()\n    Normalize(mean=(0.48145466, 0.4578275, 0.40821073), std=(0.26862954, 0.26130258, 0.27577711))\n)",
+    "image_size": [
+      224,
+      224
+    ],
+    "zs_original_ind": 0.3938053097345133,
+    "zs_original_wes": 0.8230088495575221,
+    "zs_neutral_ind": 0.39085545722713866,
+    "zs_neutral_wes": 0.8156342182890856,
+    "lp_ind": 0.948377581120944,
+    "lp_ind_C": 100.0,
+    "lp_ind_val": 0.9631268436578171,
+    "lp_wes": 0.8156342182890856,
+    "lp_wes_C": 10.0,
+    "lp_wes_val": 0.7669616519174042,
+    "reproduces_nb02_indian": true,
+    "probe_solver": "GPU L-BFGS"
+  },
+  "CLIP ViT-L/14": {
+    "arch": "ViT-L-14",
+    "pretrained": "laion2b_s32b_b82k",
+    "in_submitted_manuscript": true,
+    "fp16_image_encoding": false,
+    "preprocess": "Compose(\n    Resize(size=224, interpolation=bicubic, max_size=None, antialias=True)\n    CenterCrop(size=(224, 224))\n    MaybeConvertMode()\n    MaybeToTensor()\n    Normalize(mean=(0.5, 0.5, 0.5), std=(0.5, 0.5, 0.5))\n)",
+    "image_size": [
+      224,
+      224
+    ],
+    "zs_original_ind": 0.44837758112094395,
+    "zs_original_wes": 0.9041297935103245,
+    "zs_neutral_ind": 0.4469026548672566,
+    "zs_neutral_wes": 0.9026548672566371,
+    "lp_ind": 0.9631268436578171,
+    "lp_ind_C": 100.0,
+    "lp_ind_val": 0.9705014749262537,
+    "lp_wes": 0.9026548672566371,
+    "lp_wes_C": 10.0,
+    "lp_wes_val": 0.8510324483775811,
+    "reproduces_nb02_indian": true
+  },
+  "SigLIP SO400M/14": {
+    "arch": "ViT-SO400M-14-SigLIP",
+    "pretrained": "webli",
+    "in_submitted_manuscript": true,
+    "fp16_image_encoding": false,
+    "preprocess": "Compose(\n    Resize(size=(224, 224), interpolation=bicubic, max_size=None, antialias=True)\n    MaybeConvertMode()\n    MaybeToTensor()\n    Normalize(mean=(0.5, 0.5, 0.5), std=(0.5, 0.5, 0.5))\n)",
+    "image_size": [
+      224,
+      224
+    ],
+    "zs_original_ind": 0.7463126843657817,
+    "zs_original_wes": 0.9587020648967551,
+    "zs_neutral_ind": 0.7492625368731564,
+    "zs_neutral_wes": 0.9572271386430679,
+    "lp_ind": 0.976401179941003,
+    "lp_ind_C": 100.0,
+    "lp_ind_val": 0.9793510324483776,
+    "lp_wes": 0.9498525073746312,
+    "lp_wes_C": 100.0,
+    "lp_wes_val": 0.9188790560471977,
+    "reproduces_nb02_indian": true
+  },
+  "SigLIP2 ViT-B/16": {
+    "arch": "ViT-B-16-SigLIP2",
+    "pretrained": "webli",
+    "in_submitted_manuscript": false,
+    "fp16_image_encoding": true,
+    "preprocess": "Compose(\n    Resize(size=(224, 224), interpolation=bicubic, max_size=None, antialias=True)\n    MaybeConvertMode()\n    MaybeToTensor()\n    Normalize(mean=(0.5, 0.5, 0.5), std=(0.5, 0.5, 0.5))\n)",
+    "image_size": [
+      224,
+      224
+    ],
+    "zs_original_ind": 0.7064896755162242,
+    "zs_original_wes": 0.9410029498525073,
+    "zs_neutral_ind": 0.6887905604719764,
+    "zs_neutral_wes": 0.93952802359882,
+    "lp_ind": 0.9660766961651918,
+    "lp_ind_C": 100.0,
+    "lp_ind_val": 0.9749262536873157,
+    "lp_wes": 0.9188790560471977,
+    "lp_wes_C": 100.0,
+    "lp_wes_val": 0.8790560471976401
+  },
+  "DINOv2 ViT-B/14 (timm vit_base_patch14_dinov2, 224px)": {
+    "arch": "vit_base_patch14_dinov2",
+    "pretrained": "timm default (LVD-142M)",
+    "in_submitted_manuscript": true,
+    "fp16_image_encoding": true,
+    "preprocess": "Compose(\n    Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=True)\n    ToTensor()\n    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])\n)",
+    "feature_dim": 768,
+    "native_pretrained_cfg": {
+      "hf_hub_id": "timm/vit_base_patch14_dinov2.lvd142m",
+      "input_size": "(3, 518, 518)",
+      "interpolation": "bicubic",
+      "mean": "(0.485, 0.456, 0.406)",
+      "std": "(0.229, 0.224, 0.225)"
+    },
+    "lp_ind": 0.948377581120944,
+    "lp_ind_C": 100.0,
+    "lp_ind_val": 0.9646017699115044,
+    "lp_wes": 0.8702064896755162,
+    "lp_wes_C": 100.0,
+    "lp_wes_val": 0.8259587020648967
+  }
+}

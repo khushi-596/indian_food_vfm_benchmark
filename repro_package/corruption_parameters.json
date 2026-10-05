@@ -1,0 +1,84 @@
+{
+  "severities": {
+    "gaussian_blur": {
+      "1": {
+        "sigma": 1.0
+      },
+      "2": {
+        "sigma": 2.0
+      },
+      "3": {
+        "sigma": 4.0
+      }
+    },
+    "gaussian_noise": {
+      "1": {
+        "std": 0.04
+      },
+      "2": {
+        "std": 0.08
+      },
+      "3": {
+        "std": 0.12
+      }
+    },
+    "jpeg": {
+      "1": {
+        "quality": 50
+      },
+      "2": {
+        "quality": 30
+      },
+      "3": {
+        "quality": 10
+      }
+    },
+    "brightness_low": {
+      "1": {
+        "factor": 0.7
+      },
+      "2": {
+        "factor": 0.5
+      },
+      "3": {
+        "factor": 0.3
+      }
+    },
+    "brightness_high": {
+      "1": {
+        "factor": 1.5
+      },
+      "2": {
+        "factor": 2.0
+      },
+      "3": {
+        "factor": 2.5
+      }
+    },
+    "combined": {
+      "1": {
+        "sigma": 1.0,
+        "std": 0.04,
+        "quality": 50
+      },
+      "2": {
+        "sigma": 2.0,
+        "std": 0.08,
+        "quality": 30
+      },
+      "3": {
+        "sigma": 3.0,
+        "std": 0.08,
+        "quality": 25
+      }
+    }
+  },
+  "random_seed": 1234,
+  "blur_kernel": "2*ceil(3*sigma)+1, isotropic, torchvision gaussian_blur",
+  "noise": "additive zero-mean Gaussian, std in [0,1] intensity units, clipped to [0,1]",
+  "brightness": "pixel values multiplied by factor, clipped to [0,1]",
+  "jpeg": "PIL JPEG encode/decode at the given quality",
+  "combined_order": "blur -> noise -> JPEG",
+  "applied_to": "224x224 RGB after PIL bilinear resize, before ImageNet normalisation; re-quantised to uint8",
+  "average_drop_definition": "for each model run and severity level: mean over the 6 corruptions of (clean top-1 - corrupted top-1), in pp"
+}
