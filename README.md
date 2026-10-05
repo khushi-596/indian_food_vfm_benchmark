@@ -11,13 +11,13 @@ indian_food_vfm_benchmark/
 ├── README.md                              # Main documentation
 ├── CompressedDataset/                     # Image dataset across categories (preserved)
 ├── notebooks/                             # Primary evaluation & benchmark pipeline
-│   ├── 01_dataset_and_split.ipynb         # Dataset loading, class mapping, and stratified splits
-│   ├── 02_zeroshot_and_within_model.ipynb # Zero-shot performance & linear probing evaluation
-│   ├── 04_robustness_gradcam.ipynb        # Synthetic corruption evaluation & Grad-CAM interpretability
-│   ├── 06_deduplication_audit.ipynb       # Perceptual hashing (pHash) & embedding deduplication audit
-│   ├── 07_multiseed_training.ipynb        # Multi-seed variance assessment & stability evaluation
-│   ├── 08_statistics.ipynb                # Statistical significance testing & metric aggregation
-│   └── 09_revision_tables_and_package.ipynb# Revision tables generation & repro package builder
+│   ├── food_research_01.ipynb             # Dataset loading, class mapping, and stratified splits
+│   ├── food_research_02.ipynb             # Zero-shot performance & linear probing evaluation
+│   ├── food_research_04.ipynb             # Synthetic corruption evaluation & Grad-CAM interpretability
+│   ├── food_research_06.ipynb             # Perceptual hashing (pHash) & embedding deduplication audit
+│   ├── food_research_07.ipynb             # Multi-seed variance assessment & stability evaluation
+│   ├── food_research_08.ipynb             # Statistical significance testing & metric aggregation
+│   └── food_research_09.ipynb             # Revision tables generation & repro package builder
 ├── legacy_original_submission/            # Historical initial submission notebooks
 │   ├── README.md                          # Documentation for legacy notebooks
 │   ├── food_research_03_1.ipynb           # Early exploratory analysis (Part 1)
@@ -56,13 +56,13 @@ pip install -r requirements.txt
 
 ## 📊 Notebook Execution Pipeline
 
-1. **`notebooks/01_dataset_and_split.ipynb`**: Preprocess dataset images, construct index tables, and generate reproducible train/val/test splits.
-2. **`notebooks/02_zeroshot_and_within_model.ipynb`**: Run zero-shot classification across CLIP and vision backbones; train linear probes.
-3. **`notebooks/04_robustness_gradcam.ipynb`**: Benchmark model robustness against image corruptions and compute Grad-CAM heatmaps.
-4. **`notebooks/06_deduplication_audit.ipynb`**: Conduct dataset deduplication audit using pHash and embedding similarity.
-5. **`notebooks/07_multiseed_training.ipynb`**: Execute multi-seed runs to compute confidence intervals and variance metrics.
-6. **`notebooks/08_statistics.ipynb`**: Compute statistical significance tests (p-values, confidence bounds).
-7. **`notebooks/09_revision_tables_and_package.ipynb`**: Compile summary tables and generate reproducibility artifacts.
+1. **`notebooks/food_research_01.ipynb`**: Preprocess dataset images, construct index tables, and generate reproducible train/val/test splits.
+2. **`notebooks/food_research_02.ipynb`**: Run zero-shot classification across CLIP and vision backbones; train linear probes.
+3. **`notebooks/food_research_04.ipynb`**: Benchmark model robustness against image corruptions and compute Grad-CAM heatmaps.
+4. **`notebooks/food_research_06.ipynb`**: Conduct dataset deduplication audit using pHash and embedding similarity.
+5. **`notebooks/food_research_07.ipynb`**: Execute multi-seed runs to compute confidence intervals and variance metrics.
+6. **`notebooks/food_research_08.ipynb`**: Compute statistical significance tests (p-values, confidence bounds).
+7. **`notebooks/food_research_09.ipynb`**: Compile summary tables and generate reproducibility artifacts.
 
 ---
 
