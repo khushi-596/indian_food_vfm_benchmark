@@ -8,8 +8,7 @@ A comprehensive benchmark for evaluating Vision-Language Foundation Models (VFMs
 
 ```
 indian_food_vfm_benchmark/
-├── README.md                              # Main documentation
-├── CompressedDataset/                     # Image dataset across categories (preserved)
+├── README.md                              # Main documentation                   
 ├── notebooks/                             # Primary evaluation & benchmark pipeline
 │   ├── food_research_01.ipynb             # Dataset loading, class mapping, and stratified splits
 │   ├── food_research_02.ipynb             # Zero-shot performance & linear probing evaluation
