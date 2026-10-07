@@ -33,3 +33,7 @@ Thumbs.db
 
 # Logs & Temp Files
 *.log
+
+# Datasets
+CompressedDataset/
+
